@@ -1,0 +1,84 @@
+{
+  "id": "dnd-giants-star-forge",
+  "title": "Giants of the Star Forge",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "requires": [
+      {
+        "id": "dnd-dungeon-masters-guide",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "dnd-players-handbook",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "description": "<p><i>Bigby Presents: Glory of the Giants</i> offers a wealth of resources to help Dungeon Masters craft their own adventures featuring some of D&amp;D’s most enormous monsters.</p>",
+  "url": "https://github.com/valGavin/dnd-giants-star-forge",
+  "media": [
+    {
+      "type": "setup",
+      "url": "modules/dnd-giants-star-forge/assets/art/giants-of-the-star-forge-cover.webp",
+      "thumbnail": "modules/dnd-giants-star-forge/assets/art/giants-of-the-star-forge-cover.webp",
+      "loop": false,
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "gotsf-adventure",
+      "label": "Giants of the Star Forge",
+      "path": "packs/gotsf-adventure",
+      "type": "Adventure",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "gotsf-creatures",
+      "label": "Creatures",
+      "path": "packs/gotsf-creatures",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Giants of the Star Forge",
+      "color": "#4c2d29",
+      "sorting": "m",
+      "packs": [
+        "gotsf-adventure",
+        "gotsf-creatures"
+      ],
+      "folders": []
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "sourceBooks": {
+        "GotSF": "Giants of the Star Forge"
+      }
+    }
+  }
+}
